@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import GlobalStyle from './GlobalStyle';
+import Header from './components/Header';
+import Features from './components/Features';
+import Topics from './components/Topics';
+import Security from './components/Security';
+import Testimonials from './components/Testimonials';
+import Insights from './components/Insights';
+import Footer from './components/Footer';
+import Recentposts from './components/Recentposts';
+import Engagingcontent from './components/Engagingcontent';
+import Collectstories from './components/Collectstories';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStyle />
+      <Header />
+      <Recentposts />
+      <Features />
+      <Topics />
+      <Engagingcontent />
+      <Security />
+      <Testimonials />
+      <Collectstories />
+      <Insights />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
